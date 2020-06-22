@@ -393,6 +393,11 @@ span.num{
     width: 100%;
     z-index: 5;
 }
+@media(max-width:550px){
+    .r-h-s .navigation.hidden-sm{
+        display: none;
+    }
+}
 .navigation a.nav-link{
     color: #fff;
     font-size: 13px;
@@ -509,7 +514,6 @@ span.num{
 .achiv-head{
     transition: .4s ease-in-out;
     cursor: pointer;
-    height: 70px;
 }
 .achiv-head i{
     font-size: 27px;
@@ -535,6 +539,7 @@ hr{
 .achiv-inner{
     height: 0;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 .achiv-inner h6{
     font-family: sans-serif;
@@ -874,12 +879,12 @@ footer .tweet span{
     background-color: #191919;
 }
 .box{
-    margin-top: 56px;
-    margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
 }
 .work figure{
-    margin: 4px 4px 0 0;
-    float: left;
     overflow: hidden;
     position: relative;
 }
@@ -1000,10 +1005,6 @@ footer .tweet span{
     .r-h-s{
         width: 100%;
     }
-
-    .work .nanigation{
-        top: 60px;
-    }
     /* R-H-S */
     
     /* counter */
@@ -1035,19 +1036,23 @@ footer .tweet span{
     }
 
     .clints-slider{
-        width: 465px;
+        width: 350px;
         margin: 0;
     }
     .slides{
         width: 1860px;
     }
     .slide{
-        width: 465px;
+        width: 350px;
     }
     .slide img{
-        width: 300px;
+        width: 200px;
         height: auto;
         margin-left: 75px;
+    }
+    .slide::before,
+    .slide::after{
+        right: 20px;
     }
 
     /* Clints */
@@ -1079,6 +1084,26 @@ footer .tweet span{
     
     }
     /* Footer */
+
+    /* work */
+
+    .work .navigation{
+        position: relative;
+        margin-top: 60px;
+    }
+    .navigation .navbar{
+        background-color: #292929;
+        padding: 15px;
+    }
+    .navigation a.nav-link{
+        padding: 10px 20px !important;
+    }
+
+    .box{
+        margin: 0;
+
+    }
+    /* work */
 
 }
 
