@@ -249,8 +249,6 @@ $(document).ready(function () {
 
     i = 0;
 
-  $(".slides").css("width", slideWidth * slide.length)
-
   $(".clints .right").click(function () {
 
     if (i < slide.length - 1) i++
